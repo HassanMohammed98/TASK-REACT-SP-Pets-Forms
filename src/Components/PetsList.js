@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import PetItem from './PetItem';
-import { observer } from 'mobx-react';
-import petStore from '../petStore';
+import React, { useState } from "react";
+import PetItem from "./PetItem";
+import { observer } from "mobx-react";
+import petStore from "../petStore";
+import PetCreateModal from "./modals/PetCreateModal";
 function PetsList() {
-  const [query, setQuery] = useState('');
-  const [type, setType] = useState('');
+  const [query, setQuery] = useState("");
+  const [type, setType] = useState("");
   const pets = petStore.pets
     .filter(
       (pet) =>
@@ -46,6 +47,7 @@ function PetsList() {
                 <option value="Rabbit">Rabbit</option>
               </select>
             </div>
+            <PetCreateModal />
           </div>
         </div>
 

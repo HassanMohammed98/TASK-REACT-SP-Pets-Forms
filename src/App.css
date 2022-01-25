@@ -13,6 +13,13 @@
   }
 }
 
+.closingUpdateButton {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  gap: 10px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
