@@ -49,6 +49,7 @@ const PetUpdateModal = ({ id, name, type, image }) => {
               onChange={handleChange}
               name="newName"
               type="text"
+              defaultValue={name}
               placeholder="Enter New Name"
             />
           </Form.Group>
@@ -58,6 +59,7 @@ const PetUpdateModal = ({ id, name, type, image }) => {
               onChange={handleChange}
               name="newType"
               type="text"
+              defaultValue={type}
               placeholder="Enter Pet Type"
             />
           </Form.Group>
@@ -67,6 +69,7 @@ const PetUpdateModal = ({ id, name, type, image }) => {
               onChange={handleChange}
               name="newImage"
               type="text"
+              defaultValue={image}
               placeholder="Upload latest pic"
             />
           </Form.Group>
